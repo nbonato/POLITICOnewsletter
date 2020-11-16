@@ -13,4 +13,4 @@ Brussels Playbook gets published around 7:00 UTC+1 (Brussels timezone), so the i
 ## Libraries and modules used
 * [python-telegram-bot](https://github.com/python-telegram-bot/python-telegram-bot) for creating and operating the bot
 * [Beautiful Soup 4](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) and [Requests](https://requests.readthedocs.io/en/master/) for scraping the newsletters' pages and getting the latest issue
-* [datetime](https://docs.python.org/3/library/datetime.html) and [threading](https://docs.python.org/3/library/threading.html) to send the messages every day at the same time
+* [time](https://docs.python.org/3/library/time.html) and [schedule](https://schedule.readthedocs.io/en/stable/) to send the messages every day at the same time
