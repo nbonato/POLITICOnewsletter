@@ -1,8 +1,8 @@
 import requests
 from bs4 import BeautifulSoup
 import telegram
-from datetime import datetime
-from threading import Timer
+import schedule
+import time
 from telegram import ParseMode
 
 channel = "@POLITICOnewsletter"
@@ -64,16 +64,9 @@ def send(msg, chat_id, token):
 	#parse_mode gives me the ability to use markdown syntax to format the links
 
 
-x=datetime.today()
-y=x.replace(day=x.day, hour=8, minute=00, second=0, microsecond=0)
-delta_t=y-x
+schedule.every().day.at("8:00").do(push)
 
-secs=delta_t.seconds+1
-
-def push():
-	send(brux, channel, my_token)
-	send(morning, channel, my_token)
-
-t = Timer(secs, push)
-t.start()
+while 1:
+    schedule.run_pending()
+    time.sleep(1)
 
