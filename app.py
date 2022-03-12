@@ -3,6 +3,7 @@ from bs4 import BeautifulSoup
 import telegram
 import schedule
 import time
+import os
 from telegram import ParseMode
 from boto.s3.connection import S3Connection
 channel = "@POLITICOnewsletter"
