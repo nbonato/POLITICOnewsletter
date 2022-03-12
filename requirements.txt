@@ -2,3 +2,4 @@ requests
 telegram
 bs4
 schedule
+boto
