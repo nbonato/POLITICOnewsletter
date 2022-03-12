@@ -54,7 +54,7 @@ def send(msg, chat_id, token):
 send(brux, channel, my_token)
 send(morning, channel, my_token)
 send("text", channel, my_token)
-
+print(my_token)
 def push():
 	send(brux, channel, my_token)
 	send(morning, channel, my_token)
