@@ -43,7 +43,7 @@ brux = "[Brussels playbook](" + parse(url1, "h2", "class", "['card__title']") + 
 morning = "[Morning tech](" + parse(url2, "h3") + ")"
 
 
-my_token = S3Connection(os.environ["my_token"])
+my_token = os.environ["my_token"]
 
 def send(msg, chat_id, token):
 	bot = telegram.Bot(token=token)
