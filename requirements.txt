@@ -1,6 +1,6 @@
 gunicorn==19.9.0
 requests
-telegram
+python_telegram_bot
 bs4
 schedule
 boto
