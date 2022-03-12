@@ -42,7 +42,7 @@ brux = "[Brussels playbook](" + parse(url1, "h2", "class", "['card__title']") + 
 morning = "[Morning tech](" + parse(url2, "h3") + ")"
 
 
-my_token = 'TOKEN'
+#my_token = 'TOKEN'
 
 def send(msg, chat_id, token):
 	bot = telegram.Bot(token=token)
