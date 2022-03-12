@@ -1,5 +1,4 @@
 requests
 telegram
-time
 bs4
 schedule
