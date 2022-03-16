@@ -51,10 +51,7 @@ def send(msg, chat_id, token):
 	#parse_mode gives me the ability to use markdown syntax to format the links
 
 
-send(brux, channel, my_token)
-send(morning, channel, my_token)
-send("text", channel, my_token)
-print(my_token)
+
 def push():
 	send(brux, channel, my_token)
 	send(morning, channel, my_token)
